@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Jogo de 21</title>
+</head>
+<body>
+  <h1>Black Jack - DWI</h1>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <h2>Escolha sua nova mão</h2>
+      <input type="text" id="card-names-textbox"/>
+      <button id="change-button">Alterar Mão</button>
+      <button id="btn-close" onclick="closeModal()">x</button>
+    </div>
+  </div>
+
+  <div class="game-container">
+    <div class="hand">
+      <h2>Cartas da Casa</h2>
+      <div id="dealer-hand" class="cards"></div>
+      <p id="dealer-score" class="score"></p>
+    </div>
+    <div class="hand">
+      <h2>Cartas do Jogador</h2>
+      <div id="player-hand" class="cards"></div>
+      <p id="player-score" class="score"></p>
+    </div>
+
+    <div class="result">
+      <p id="result"></p>
+    </div>
+    <div class="buttons">
+      <button id="hit-button">Pegar Carta</button>
+      <button id="stand-button">Ficar</button>
+      <button id="new-game-button">Novo Jogo</button>
+      <button id="change-hand-button">Alterar Mão</button>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
